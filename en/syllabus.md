@@ -14,7 +14,13 @@ page_key: syllabus
 
 MDMA serves learners who use quantitative models to support management action. It begins with problem structuring and cash-flow evaluation, advances through optimization, linear/integer programming, network flow, and Monte Carlo simulation, and closes with a decision brief. Software proficiency is not the endpoint; the transferable discipline is to define the decision, expose assumptions, represent trade-offs, seek evidence, challenge results, and own action.
 
+MDMA is this course's abbreviation for Management Decision Modeling & Analysis, not a universally standardized standalone discipline name. Its authoritative foundations combine the [INFORMS account of Operations Research and Analytics](https://www.informs.org/Explore/Operations-Research-Analytics) and the [INFORMS Decision Analysis Society](https://connect.informs.org/das/about-us/about): scientific, mathematical, and logical methods improve decisions in public and private organizations while addressing complex systems, uncertainty, multiple objectives, risk, behavior, and group processes.
+
 The revision adds three **ungraded frontier lenses**: robust/stochastic decisions, data-driven prescriptive analytics, and model governance with AI. They challenge classical assumptions without silently changing the approved 2026 modules, cases, or grading policy.
+
+## Why systematic study still matters in the agent era
+
+[Official OpenAI documentation](https://developers.openai.com/) says Codex can understand codebases, build and test features, fix bugs, and review changes. It can rapidly draft candidate variables, constraints, code, scenarios, and validation scripts. Generated content alone cannot determine whether an objective represents real value, data and constraints are complete, uncertainty is modeled appropriately, an optimum is implementable, or who bears cost, risk, and consequences. Agents reduce expression and computation friction; the course still develops problem judgment, model criticism, evidence responsibility, and action governance.
 
 ## Problem-oriented learning loop
 
@@ -27,6 +33,15 @@ The revision adds three **ungraded frontier lenses**: robust/stochastic decision
 7. **Reflect and transfer:** explain what changed and apply the method in a new context.
 
 The instructor supplies scaffolds, counterexamples, and gates, then progressively transfers problem definition, model choice, and verification responsibility from D0 to D5.
+
+### Distinctive pedagogy
+
+- **Contested problem before method label:** encounter incomplete information and conflicting objectives before choosing what to learn;
+- **Representation before solving:** draw a timeline, influence diagram, network, or variable–constraint sketch before Excel/Python;
+- **Small truth case before large model:** hand-solve or enumerate a reduced instance as a solver oracle;
+- **Counterexample before optimality worship:** seek infeasibility, extreme scenarios, sensitivity thresholds, near-optima, and reversals;
+- **Tool-neutral, semantically stable:** preserve variables, objective, constraints, units, and acceptance tests across tools; and
+- **Decision Brief and transfer:** state action, risk, override, and next evidence in business language, then transfer to a new problem.
 
 ## Learning outcomes
 
@@ -52,6 +67,19 @@ Calculus, probability and statistics, and basic computing. Spreadsheet or Python
 - **six formal cases** cover acquisition, pricing, product mix, logistics, capital expansion, and revenue management;
 - each formal case includes a **Reality Lab** varying a parameter, structure, objective, evidence source, or implementation constraint;
 - every experiment includes a comparison such as hand versus code, Excel versus Python, naive versus optimized, or deterministic versus stochastic.
+
+## AI_Tutoring D0–D5 mechanism
+
+| Stage | Student responsibility | Tutor support | Advancement evidence |
+|---|---|---|---|
+| D0 Diagnose | Separate inputs, decisions, objectives, constraints, risks, and units | Full examples and immediate correction | Prerequisite diagnosis and explain-back |
+| D1 Guided reproduction | Rerun and explain a small DCF, LP, or simulation | Steps and formula/status checks | Truth case, correct run, business explanation |
+| D2 Guided application | Change one parameter, constraint, or objective | Interfaces, milestones, validation checklist | Independent success under a new condition |
+| D3 Independent analysis | Select model and tools from a case narrative | Socratic questions, counterexamples, evidence gaps | Alternatives and reproducible package |
+| D4 Evaluate decisions | Resolve multiple objectives, uncertainty, infeasibility, and robustness | Review questions and stop conditions | Sensitivity, near-optima, risk, defended choice |
+| D5 Create and transfer | Rebuild the decision loop in a new business | Resources, safety, and review boundaries only | Implementable advice, governance, defense, review |
+
+The Hint Budget moves from L0 Socratic questions and L1 evidence gaps to L2 method advice and L3 partial examples from a different task. Students attempt first; exhausted budgets, conflicting models, and high-risk advice escalate to a teacher or TA. Mastery depends on explainable models, real solve evidence, counterexamples, and transfer—not workbook size, code volume, or model confidence.
 
 ## Approved assessment baseline
 

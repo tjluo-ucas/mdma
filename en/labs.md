@@ -20,6 +20,20 @@ page_key: labs
 
 If changing software makes the model impossible to explain, the learner has acquired a button sequence rather than modeling judgment.
 
+## AI_Tutoring studio checkpoints
+
+Every studio follows the same learning loop:
+
+1. **Pre-frame:** the student states the owner, actions, objectives, constraints, units, unknowns, and failure conditions;
+2. **Attempt first:** a structure diagram, formula, code, workbook, or analysis precedes every core hint;
+3. **Evidence diagnosis:** the Tutor separates framing, representation, solving, validation, explanation, and implementation gaps;
+4. **Bounded hint:** support rises from questions to method advice without releasing the same-task model or answer;
+5. **Deterministic checks:** validate units, domains, residuals, termination status, gap, seed, and logs;
+6. **Explain-back:** the student explains agent advice, accept/reject reasons, and how the recommendation changed; and
+7. **Transfer probe:** change the objective, constraint, uncertainty, organizational setting, or tool and defend the choice again.
+
+<div class="notice"><strong>Codex protocol</strong>An agent may draft implementations, tests, and scenarios and run them in a controlled environment. It may not invent missing business data, silently change constraints, or fabricate solver results. An unexplained model or an “optimum” without real solve evidence cannot pass the decision gate.</div>
+
 ## Tool choice is not a prestige ladder
 
 | Route | Good fit | Typical tools | Evidence that must accompany it |

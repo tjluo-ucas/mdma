@@ -28,6 +28,7 @@ body {
 a { color: var(--blue); text-underline-offset: 0.18em; }
 a:hover { color: #073e90; }
 img { max-width: 100%; }
+.mobile-break { display: none; }
 code, pre { font-family: "SFMono-Regular", Consolas, monospace; }
 code { background: rgba(11, 91, 211, 0.08); border-radius: 5px; padding: 0.12em 0.3em; font-size: 0.9em; }
 pre { overflow: auto; padding: 1rem 1.2rem; color: #eff8ff; background: var(--navy); border-radius: 14px; }
@@ -57,9 +58,8 @@ pre code { padding: 0; color: inherit; background: transparent; }
 .primary-nav a:hover, .primary-nav a.active { color: white; background: rgba(255,255,255,.1); }
 .primary-nav .language-link { margin-left: 7px; color: var(--navy); background: var(--lime); }
 .primary-nav .language-link:hover { color: var(--navy); background: #d0e95a; }
-.nav-toggle { display: none; margin-left: auto; padding: 8px; background: transparent; border: 0; }
+.nav-toggle { display: none; margin-left: auto; padding: 8px; color: white; background: transparent; border: 0; font-size: .78rem; font-weight: 800; letter-spacing: .08em; }
 .nav-toggle span:not(.sr-only) { display: block; width: 24px; height: 2px; margin: 5px 0; background: white; }
-.nav-toggle::after { content: "Menu"; display: none; color: white; font-size: .72rem; font-weight: 800; letter-spacing: .08em; }
 
 .hero {
   position: relative; overflow: hidden; color: white; background: var(--navy);
@@ -168,7 +168,7 @@ pre code { padding: 0; color: inherit; background: transparent; }
 
 @media (max-width: 1120px) {
   .nav-toggle { display: block !important; visibility: visible; opacity: 1; }
-  .nav-toggle::after { display: block; }
+  .nav-toggle span:not(.sr-only) { display: none; }
   .primary-nav { position: absolute; top: 74px; right: 20px; width: min(360px, calc(100% - 40px)); padding: 12px; display: none; flex-direction: column; align-items: stretch; background: var(--navy); border: 1px solid rgba(255,255,255,.14); border-radius: 14px; box-shadow: var(--shadow); }
   .primary-nav.is-open { display: flex; }
   .primary-nav .language-link { margin: 5px 0 0; text-align: center; }
@@ -196,6 +196,7 @@ pre code { padding: 0; color: inherit; background: transparent; }
   .eyebrow { max-width: 28rem; font-size: .7rem; line-height: 1.5; overflow-wrap: anywhere; }
   .hero h1 { font-size: clamp(2.9rem, 14.5vw, 4.4rem); letter-spacing: -.055em; }
   .hero .lead { font-size: 1rem; }
+  .mobile-break { display: block; }
   .page-hero h1 { font-size: 2.3rem; overflow-wrap: anywhere; word-break: break-word; }
   .page-hero p:last-child { font-size: 1rem; overflow-wrap: anywhere; word-break: break-all; }
   .content-shell > h2 { font-size: 1.65rem; overflow-wrap: anywhere; word-break: break-word; }

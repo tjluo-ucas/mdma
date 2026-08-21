@@ -10,6 +10,10 @@ page_key: lectures
 <section class="page-hero"><div class="page-hero-inner"><p class="eyebrow">Methods map</p><h1>Not a method list—a toolbox for decision problems</h1><p>Every method must answer: what problem does it address, what assumptions does it require, how is it tested, and when should it not be used?</p></div></section>
 <div class="content-shell" markdown="1">
 
+## 0. Disciplinary core: improve decisions, not model theater
+
+Under the INFORMS operations research, management science, analytics, and decision-analysis frame, MDMA turns complex management problems into comparable actions and improves decision quality under objectives, constraints, uncertainty, stakeholder values, and risk. Modeling does not end when a story becomes equations; it is an accountable Frame → Represent → Solve → Challenge → Decide → Review loop.
+
 ## The way of thinking across methods
 
 The course does not teach menus first and matching exercises second. For every case ask: who must decide what, and when? Which elements are actions, evidence, and uncertainty? Who defines success? What mistaken intuition can a minimum model eliminate? What evidence is worth acquiring before action? Solving is an intermediate step; conflict between model and reality is new information to investigate.
@@ -49,6 +53,10 @@ Influence diagrams, decision trees, expected utility, multiattribute value, and 
 ## 7. Implementation, governance, and AI
 
 An operational model needs versioning, input lineage, approvers, override/rollback, drift monitoring, and review measures. AI may propose structures and counterexamples but may not invent case data, silently relax constraints, or relabel infeasibility as optimality. People retain ownership of objectives, values, permissions, and final action.
+
+### Codex collaboration boundary
+
+Codex may inspect repository and data structure, draft candidate models and code, add tests, run small cases, and compare results. An agent output remains a **model hypothesis awaiting verification**. Every material variable, constraint, parameter, solver status, gap, sensitivity result, and business recommendation must connect to a source or actual execution. Fluent explanation is not evidence of feasibility, optimality, or real-world fitness.
 
 ## Method-selection principles
 

@@ -10,6 +10,15 @@ page_key: resources
 <section class="page-hero"><div class="page-hero-inner"><p class="eyebrow">Books &amp; research</p><h1>Build the core with classics; test its boundary with frontier work</h1><p>The reading map is organized by course use and does not require buying every book. Editions, chapters, access, and licensing are confirmed for each offering.</p></div></section>
 <div class="content-shell" markdown="1">
 
+## Authoritative disciplinary entry points
+
+- [INFORMS Operations Research & Analytics](https://www.informs.org/Explore/Operations-Research-Analytics) for O.R., analytics, descriptive/predictive/prescriptive analysis, and the shared goal of better decisions;
+- the [INFORMS Decision Analysis Society](https://connect.informs.org/das/about-us/about) for uncertainty, multiple objectives, risk, behavior, groups, and decision support;
+- the [INFORMS Analytics Body of Knowledge](https://pubsonline.informs.org/series/abok) for problem, team, data, methodology, modeling, machine learning, and deployment lifecycle; and
+- [OpenAI Developers / Codex](https://developers.openai.com/) for code understanding, building, testing, fixing, and review capabilities.
+
+<div class="notice"><strong>Reading order</strong>Use INFORMS to establish why a decision is needed, who owns it, and what evidence it requires; then learn DCF, optimization, simulation, and decision-analysis methods; finally test whether a model is credible and implementable through case execution. Codex documentation describes agent capabilities—it does not prove that an objective, constraint, or recommendation is correct.</div>
+
 ## Core modeling and management-science texts
 
 1. **Winston & Albright, _Practical Management Science_, 6e.** Closely aligned with the course's Excel, optimization, simulation, and management-case spine. [Cengage](https://www.cengage.com/c/practical-management-science-6e-winston-albright/9781337406659/)
@@ -67,4 +76,5 @@ Select tools by problem structure, scale, auditability, license, team capability
 - Powell, [Teaching Modeling in Management Science](https://pubsonline.informs.org/doi/10.1287/ited.1.2.62): managers are decision makers and learners; sophisticated algorithms should not suppress modeling judgment.
 
 <div class="notice"><strong>Research boundary</strong>Books and papers support course design and extension reading; they are not automatically data sources or standard answers for graded cases. The public site links legitimate pages and does not mirror copyrighted books, exhibits, solutions, or instructor resources.</div>
+<div class="notice"><strong>Verified</strong>INFORMS disciplinary entry points and the official Codex entry point were checked on 2026-08-21. Software, solvers, licenses, and online resources can change and must be checked again when an experiment runs.</div>
 </div>

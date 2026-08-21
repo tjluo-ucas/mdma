@@ -84,6 +84,19 @@ end
   text = (ROOT / name).read
   errors << "#{name}: missing method comparison" unless text.match?(/方法对照|method comparison/i)
   errors << "#{name}: missing reproducible package" unless text.match?(/可复现分析包|Reproducible analysis package/i)
+  errors << "#{name}: missing AI_Tutoring checkpoints" unless text.include?("AI_Tutoring")
+  errors << "#{name}: missing explain-back" unless text.match?(/Explain-back/i)
+end
+
+%w[index.md en/index.md].each do |name|
+  text = (ROOT / name).read
+  errors << "#{name}: missing INFORMS disciplinary source" unless text.include?("informs.org")
+  errors << "#{name}: missing Decision Analysis disciplinary source" unless text.include?("connect.informs.org")
+  errors << "#{name}: missing Codex capability boundary" unless text.include?("Codex")
+  errors << "#{name}: missing AI_Tutoring mechanism" unless text.include?("AI_Tutoring")
+  %w[D0 D1 D2 D3 D4 D5].each do |level|
+    errors << "#{name}: missing progression #{level}" unless text.include?(level)
+  end
 end
 
 forbidden = /Summer 2026 MDMA Cases\.pdf|20260603_(?:Problems|Sylllabus)\.md|(?:API_KEY|PASSWORD|SECRET)\s*=\s*\S+/
@@ -100,6 +113,8 @@ if errors.empty?
   puts "MDMA public case IDs per locale: 6"
   puts "MDMA group exercise IDs per locale: 5"
   puts "tool-neutral assignment/lab contract: PASS"
+  puts "disciplinary definition and Codex boundary: PASS"
+  puts "AI_Tutoring D0-D5 progression: PASS"
   exit 0
 end
 

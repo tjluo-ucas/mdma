@@ -6,7 +6,7 @@ Bilingual Jekyll site for **Management Decision Modeling & Analysis (MDMA)**, de
 
 > management problem → decision frame → model → solution → verification → recommendation → implementation review
 
-The site preserves the approved 2026 intensive-course baseline while adding a research-grounded knowledge map spanning modeling craft, decision analysis, optimization, simulation, robust/stochastic optimization, and data-driven prescriptive analytics. Assignments and labs are tool-neutral: spreadsheets, Python, analytical methods, and professional solvers are accepted when the model is explainable, verifiable, and reproducible.
+The site preserves the approved 2026 intensive-course baseline while defining MDMA through the INFORMS operations-research, management-science, analytics, and decision-analysis frames. It explains why coding agents do not remove judgment and accountability challenges, and shows how problem-first pedagogy plus AI_Tutoring moves learners from D0 diagnosis to D5 creation and transfer. Assignments and labs remain tool-neutral: spreadsheets, Python, analytical methods, and professional solvers are accepted when the model is explainable, verifiable, and reproducible.
 
 ## Verify locally
 

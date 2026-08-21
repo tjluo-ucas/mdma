@@ -10,6 +10,15 @@ page_key: resources
 <section class="page-hero"><div class="page-hero-inner"><p class="eyebrow">Books &amp; research</p><h1>用经典建立主干，用前沿检验边界</h1><p>以下书目按课程用途组织，不要求全部购买。版本、章节、电子资源和许可由教师在每次开课时确认。</p></div></section>
 <div class="content-shell" markdown="1">
 
+## 权威学科入口
+
+- [INFORMS Operations Research & Analytics](https://www.informs.org/Explore/Operations-Research-Analytics)：运筹、分析学、描述/预测/处方分析及其改善决策的共同目标；
+- [INFORMS Decision Analysis Society](https://connect.informs.org/das/about-us/about)：不确定性、多目标、风险、行为、群体与决策支持范围；
+- [INFORMS Analytics Body of Knowledge](https://pubsonline.informs.org/series/abok)：问题、团队、数据、方法、建模、机器学习与部署生命周期框架；
+- [OpenAI Developers / Codex](https://developers.openai.com/)：Codex的代码理解、构建、测试、修复和审查能力说明。
+
+<div class="notice"><strong>阅读顺序</strong>先用 INFORMS 建立“为什么决策、谁来决策、需要何种证据”的学科框架，再学习 DCF、优化、仿真和决策分析方法，最后以案例执行检验模型是否可信、可实施。Codex 文档说明 Agent 能做什么，不证明目标、约束或建议正确。</div>
+
 ## 核心建模与管理科学教材
 
 1. **Winston & Albright, _Practical Management Science_, 6e.** 与课程的Excel、优化、仿真和管理案例主线高度匹配。[Cengage官方页](https://www.cengage.com/c/practical-management-science-6e-winston-albright/9781337406659/)
@@ -67,4 +76,5 @@ page_key: resources
 - Powell, [Teaching Modeling in Management Science](https://pubsonline.informs.org/doi/10.1287/ited.1.2.62)：管理者既是决策者也是学习者，建模能力不能被复杂算法压倒。
 
 <div class="notice"><strong>研究边界</strong>书籍与论文支持课程结构和延伸阅读，不自动成为正式题目的数据来源或“标准答案”。公开站只链接合法页面，不镜像受版权保护的全文、案例附件和教师资源。</div>
+<div class="notice"><strong>核验日期</strong>INFORMS 学科入口与 Codex 官方入口于2026-08-21核验。软件、求解器、许可和在线资源可能变化，实验时必须重新检查。</div>
 </div>
