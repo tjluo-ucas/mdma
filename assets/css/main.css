@@ -196,6 +196,10 @@ pre code { padding: 0; color: inherit; background: transparent; }
   .eyebrow { max-width: 28rem; font-size: .7rem; line-height: 1.5; overflow-wrap: anywhere; }
   .hero h1 { font-size: clamp(2.9rem, 14.5vw, 4.4rem); letter-spacing: -.055em; }
   .hero .lead { font-size: 1rem; }
+  .page-hero h1 { font-size: 2.3rem; overflow-wrap: anywhere; word-break: break-word; }
+  .page-hero p:last-child { font-size: 1rem; overflow-wrap: anywhere; word-break: break-all; }
+  .content-shell > h2 { font-size: 1.65rem; overflow-wrap: anywhere; word-break: break-word; }
+  .content-shell p, .content-shell li { overflow-wrap: anywhere; word-break: break-all; }
   .orbit { margin-top: 10px; }
   .layer-grid, .track-grid, .card-grid, .footer-grid { grid-template-columns: 1fr; }
   .layer-card:last-child, .footer-grid > div:first-child { grid-column: auto; }

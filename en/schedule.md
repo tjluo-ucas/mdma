@@ -14,23 +14,23 @@ page_key: schedule
 
 | Date | Problem and module | Case/activity | Tool | Difficulty |
 |---|---|---|---|---|
-| 6/22 | How does an ambiguous choice become a decision frame? M1 | GE1 car choice | Excel foundations | D0–D1 |
-| 6/23 | Which assumptions drive acquisition value? | MDMA-C1 rental business; GE2 stock sale | Excel NPV | D1–D2 |
-| 6/24 | How do price, demand, and resources jointly drive profit? M2 | MDMA-C2 vehicle pricing; GE3 revised EOQ | Nonlinear Solver | D2–D3 |
-| 6/25 | How should scarce resources form a product mix? M3 LP | MDMA-C3 coffee mix; GE2 revisited | Solver LP | D2–D3 |
+| 6/22 | How does an ambiguous choice become a decision frame? M1 | GE1 car choice | Timeline; spreadsheet or Python | D0–D1 |
+| 6/23 | Which assumptions drive acquisition value? | MDMA-C1 rental business; GE2 stock sale | NPV function; sheet or code | D1–D2 |
+| 6/24 | How do price, demand, and resources jointly drive profit? M2 | MDMA-C2 vehicle pricing; GE3 revised EOQ | Solver or SciPy nonlinear | D2–D3 |
+| 6/25 | How should scarce resources form a product mix? M3 LP | MDMA-C3 coffee mix; GE2 revisited | Solver, SciPy, or Pyomo LP | D2–D3 |
 | 6/26 | No class | No required task in active source | — | — |
-| 6/27 | How can a conservation network minimize distribution cost? M4 | MDMA-C4 vehicle distribution; GE4 investment | Network Solver | D2–D3 |
-| 6/28 | When do decisions require integrality and logic? M5 | MDMA-C5 aircraft/facility expansion | Solver MIP | D3–D4 |
-| 6/29 | Which plan deserves risk under uncertain demand? M6 | MDMA-C6 cabin configuration; GE5 retirement | Monte Carlo | D3–D4 |
+| 6/27 | How can a conservation network minimize distribution cost? M4 | MDMA-C4 vehicle distribution; GE4 investment | Network solver or Python | D2–D3 |
+| 6/28 | When do decisions require integrality and logic? M5 | MDMA-C5 aircraft/facility expansion | MIP Solver, SciPy/Pyomo | D3–D4 |
+| 6/29 | Which plan deserves risk under uncertain demand? M6 | MDMA-C6 cabin configuration; GE5 retirement | Excel or NumPy Monte Carlo | D3–D4 |
 | 6/30 | How does the model transfer to work? | One-page reflection and synthesis | Decision brief | D3–D4 |
 
 ## Daily problem cycle
 
 1. **Problem launch:** begin with a manager memo, conflicting data, or failed recommendation;
 2. **Know / need to know:** list facts, assumptions, unknowns, and learning issues;
-3. **Model sketch:** draw variables, relations, time line, or network before Excel;
-4. **Build:** implement the smallest model in a partitioned workbook;
-5. **Challenge:** exchange models and seek unit errors, omitted constraints, infeasibility, and counterexamples;
+3. **Model sketch:** draw variables, relations, timeline, or network without depending on software;
+4. **Build:** implement the smallest model in a workbook, notebook, or Python project;
+5. **Challenge:** exchange models and use a second method to seek unit errors, omitted constraints, infeasibility, and counterexamples;
 6. **Decision brief:** state the recommendation, thresholds, risk, and next data request;
 7. **Reflection:** record how the model changed understanding of the problem.
 

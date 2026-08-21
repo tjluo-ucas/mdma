@@ -14,23 +14,23 @@ page_key: schedule
 
 | 日期 | 问题与模块 | 案例/活动 | 工具 | 难度 |
 |---|---|---|---|---|
-| 6/22 | 如何把模糊选择变成决策结构？M1导论 | GE1 购车决策 | Excel基础 | D0–D1 |
-| 6/23 | 收购价值由哪些假设驱动？ | MDMA-C1 租赁企业；GE2股票出售 | Excel NPV | D1–D2 |
-| 6/24 | 价格、需求和资源如何共同决定利润？M2优化 | MDMA-C2 车辆定价；GE3修订EOQ | Solver非线性 | D2–D3 |
-| 6/25 | 如何用稀缺资源形成产品组合？M3 LP | MDMA-C3 咖啡组合；GE2 revisited | Solver LP | D2–D3 |
+| 6/22 | 如何把模糊选择变成决策结构？M1导论 | GE1 购车决策 | 时间轴；Excel或Python | D0–D1 |
+| 6/23 | 收购价值由哪些假设驱动？ | MDMA-C1 租赁企业；GE2股票出售 | NPV函数；表格或代码 | D1–D2 |
+| 6/24 | 价格、需求和资源如何共同决定利润？M2优化 | MDMA-C2 车辆定价；GE3修订EOQ | Solver或SciPy非线性 | D2–D3 |
+| 6/25 | 如何用稀缺资源形成产品组合？M3 LP | MDMA-C3 咖啡组合；GE2 revisited | Solver、SciPy或Pyomo LP | D2–D3 |
 | 6/26 | 无课 | 正式发布依据未规定任务 | — | — |
-| 6/27 | 配送网络如何在守恒下最低成本？M4网络流 | MDMA-C4 汽车配送；GE4投资规划 | Solver Network | D2–D3 |
-| 6/28 | 何时必须使用整数与逻辑？M5整数规划 | MDMA-C5 飞机与维修扩建 | Solver MIP | D3–D4 |
-| 6/29 | 不确定需求下什么方案值得承担风险？M6仿真 | MDMA-C6 舱位配置；GE5退休规划 | Monte Carlo | D3–D4 |
+| 6/27 | 配送网络如何在守恒下最低成本？M4网络流 | MDMA-C4 汽车配送；GE4投资规划 | Network Solver或Python | D2–D3 |
+| 6/28 | 何时必须使用整数与逻辑？M5整数规划 | MDMA-C5 飞机与维修扩建 | MIP Solver、SciPy/Pyomo | D3–D4 |
+| 6/29 | 不确定需求下什么方案值得承担风险？M6仿真 | MDMA-C6 舱位配置；GE5退休规划 | Excel或NumPy Monte Carlo | D3–D4 |
 | 6/30 | 模型如何迁移到真实工作？ | 一页个人反思、总结讨论 | 决策简报 | D3–D4 |
 
 ## 每日问题循环
 
 1. **Problem launch**：用管理者备忘录、冲突数据或失败建议启动；
 2. **Know / Need to know**：小组列出事实、假设、未知和学习问题；
-3. **Model sketch**：不用 Excel 先画变量、关系、时间轴或网络；
-4. **Build**：在分区工作簿中实现最小模型；
-5. **Challenge**：交换模型，寻找单位错误、遗漏约束、不可行或反例；
+3. **Model sketch**：不依赖软件，先画变量、关系、时间轴或网络；
+4. **Build**：在工作簿、Notebook或Python项目中实现最小模型；
+5. **Challenge**：交换模型并用另一方法寻找单位错误、遗漏约束、不可行或反例；
 6. **Decision brief**：说明建议、阈值、风险和下一步取数；
 7. **Reflection**：记录模型如何改变了对问题的理解。
 

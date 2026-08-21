@@ -10,9 +10,13 @@ page_key: lectures
 <section class="page-hero"><div class="page-hero-inner"><p class="eyebrow">Methods map</p><h1>Not a method list—a toolbox for decision problems</h1><p>Every method must answer: what problem does it address, what assumptions does it require, how is it tested, and when should it not be used?</p></div></section>
 <div class="content-shell" markdown="1">
 
+## The way of thinking across methods
+
+The course does not teach menus first and matching exercises second. For every case ask: who must decide what, and when? Which elements are actions, evidence, and uncertainty? Who defines success? What mistaken intuition can a minimum model eliminate? What evidence is worth acquiring before action? Solving is an intermediate step; conflict between model and reality is new information to investigate.
+
 ## 1. Decision framing and modeling craft
 
-Identify the decision owner, values, alternatives, information, constraints, and horizon before modeling. A reliable workbook separates inputs, model, checks, scenarios, and outputs; uses consistent units, clear names, short formulas, traceable timelines, and independent recomputation.
+Identify the decision owner, values, alternatives, information, constraints, and horizon before modeling. A reliable analysis package—workbook or Python project—separates inputs, model, checks, scenarios, and outputs; uses consistent units, clear names, traceable timelines, and independent recomputation.
 
 **Counterexamples:** solving the wrong objective; treating a controllable action as an input; omitting a stakeholder; overwriting formulas with hard-coded values; hiding a faulty model behind an attractive dashboard.
 
@@ -45,5 +49,13 @@ Influence diagrams, decision trees, expected utility, multiattribute value, and 
 ## 7. Implementation, governance, and AI
 
 An operational model needs versioning, input lineage, approvers, override/rollback, drift monitoring, and review measures. AI may propose structures and counterexamples but may not invent case data, silently relax constraints, or relabel infeasibility as optimality. People retain ownership of objectives, values, permissions, and final action.
+
+## Method-selection principles
+
+- hand-solve or enumerate a small problem first to create a truth case for software tests;
+- use a spreadsheet when managers need to inspect and interact with a compact model;
+- use Python for batch calculation, data work, simulation, automated tests, and repetition;
+- use Pyomo, OR-Tools, or a professional solver as scale, logic, gap, or infeasibility analysis grows;
+- hybrid practice is common: data/ML estimates parameters, optimization forms alternatives, managers interpret and approve, and outcomes feed monitoring.
 
 </div>

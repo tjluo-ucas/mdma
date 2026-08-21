@@ -10,7 +10,7 @@ page_key: resources
 <section class="page-hero"><div class="page-hero-inner"><p class="eyebrow">Books &amp; research</p><h1>用经典建立主干，用前沿检验边界</h1><p>以下书目按课程用途组织，不要求全部购买。版本、章节、电子资源和许可由教师在每次开课时确认。</p></div></section>
 <div class="content-shell" markdown="1">
 
-## 核心电子表格与管理科学教材
+## 核心建模与管理科学教材
 
 1. **Winston & Albright, _Practical Management Science_, 6e.** 与课程的Excel、优化、仿真和管理案例主线高度匹配。[Cengage官方页](https://www.cengage.com/c/practical-management-science-6e-winston-albright/9781337406659/)
 2. **Ragsdale, _Spreadsheet Modeling and Decision Analysis_, 9e.** 系统覆盖建模、优化、决策分析、仿真与Business Analytics。[Cengage官方页](https://faculty.cengage.com/titles/9780357132098)
@@ -18,6 +18,8 @@ page_key: resources
 4. **Baker, _Optimization Modeling with Spreadsheets_, 3e.** 侧重LP、NLP、IP、网络与模型构造原则。[Wiley官方页](https://www.wiley.com/en-us/Optimization+Modeling+with+Spreadsheets%2C+3rd+Edition-p-9781118937730)
 
 建议以其中一本作为主教材，其他作为案例和建模工艺参考，避免按书目顺序堆叠方法。
+
+教材中的电子表格路线用于建立可视、可沟通的模型工艺，不构成软件限制。同一个数学模型可以迁移到Python或其他建模语言，迁移时必须保持变量、目标、约束、单位和验收测试一致。
 
 ## 决策分析、运筹优化与仿真基础
 
@@ -41,6 +43,16 @@ page_key: resources
 - Mandi et al., [Decision-Focused Learning: Foundations, Benchmark and Opportunities](https://arxiv.org/abs/2307.13565)：决策聚焦学习的方法、基准与局限综述。
 
 这些文献作为 D4/D5 延伸，不意味着密集课程要求学生实现端到端可微优化。
+
+## Python与开放求解工具入口
+
+- [SciPy Optimize](https://docs.scipy.org/doc/scipy/tutorial/optimize.html)：非线性优化、LP与MILP，适合小中型案例和可复现数值实验；
+- [Pyomo](https://pyomo.readthedocs.io/en/stable/)：用Python表达结构化优化模型，并连接开源或商业求解器；
+- [Google OR-Tools](https://developers.google.com/optimization)：覆盖LP/MIP、网络流、路由、排程与约束规划；
+- [CVXPY](https://www.cvxpy.org/tutorial/index.html)：以Disciplined Convex Programming检查凸模型结构；
+- NumPy/pandas/Jupyter可用于现金流、数据准备、Monte Carlo、可视化与实验记录。
+
+工具选型须同时考虑问题结构、规模、审计性、许可证、团队能力和部署环境。库的返回状态不是业务结论；仍需残差、容差、Gap、边界和独立复算。
 
 ## 模型可靠性与治理
 

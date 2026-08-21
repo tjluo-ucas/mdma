@@ -10,7 +10,7 @@ page_key: resources
 <section class="page-hero"><div class="page-hero-inner"><p class="eyebrow">Books &amp; research</p><h1>Build the core with classics; test its boundary with frontier work</h1><p>The reading map is organized by course use and does not require buying every book. Editions, chapters, access, and licensing are confirmed for each offering.</p></div></section>
 <div class="content-shell" markdown="1">
 
-## Core spreadsheet and management-science texts
+## Core modeling and management-science texts
 
 1. **Winston & Albright, _Practical Management Science_, 6e.** Closely aligned with the course's Excel, optimization, simulation, and management-case spine. [Cengage](https://www.cengage.com/c/practical-management-science-6e-winston-albright/9781337406659/)
 2. **Ragsdale, _Spreadsheet Modeling and Decision Analysis_, 9e.** Modeling, optimization, decision analysis, simulation, and business analytics. [Cengage](https://faculty.cengage.com/titles/9780357132098)
@@ -18,6 +18,8 @@ page_key: resources
 4. **Baker, _Optimization Modeling with Spreadsheets_, 3e.** Formulation-centered LP, NLP, IP, and network modeling. [Wiley](https://www.wiley.com/en-us/Optimization+Modeling+with+Spreadsheets%2C+3rd+Edition-p-9781118937730)
 
 Select one as the primary text and use the others for modeling craft and cases rather than teaching through a method-by-method table of contents.
+
+Their spreadsheet route develops visible, communicable modeling craft; it is not a software restriction. The same mathematical model may migrate to Python or another language while preserving variables, objective, constraints, units, and acceptance tests.
 
 ## Decision analysis, operations research, and simulation
 
@@ -41,6 +43,16 @@ Select one as the primary text and use the others for modeling craft and cases r
 - Mandi et al., [Decision-Focused Learning: Foundations, Benchmark and Opportunities](https://arxiv.org/abs/2307.13565): methods, benchmarks, and limitations.
 
 These are D4/D5 extensions, not a requirement to implement end-to-end differentiable optimization in the intensive course.
+
+## Python and open-solver entry points
+
+- [SciPy Optimize](https://docs.scipy.org/doc/scipy/tutorial/optimize.html): nonlinear optimization, LP, and MILP for reproducible small/medium experiments;
+- [Pyomo](https://pyomo.readthedocs.io/en/stable/): structured optimization models in Python connected to open or commercial solvers;
+- [Google OR-Tools](https://developers.google.com/optimization): LP/MIP, flows, routing, scheduling, and constraint programming;
+- [CVXPY](https://www.cvxpy.org/tutorial/index.html): disciplined convex modeling and structural checks;
+- NumPy, pandas, and Jupyter support cash flows, preparation, Monte Carlo, visualization, and experiment records.
+
+Select tools by problem structure, scale, auditability, license, team capability, and deployment setting. A library status is not a business conclusion; residuals, tolerances, gaps, boundaries, and independent recomputation remain necessary.
 
 ## Model reliability and governance
 

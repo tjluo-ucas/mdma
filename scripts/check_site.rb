@@ -74,6 +74,16 @@ end
   text = (ROOT / name).read
   ids = text.scan(/MDMA-C[1-6]\b/).uniq
   errors << "#{name}: expected MDMA-C1..C6, found #{ids.length}" unless ids.length == 6
+  exercise_ids = text.scan(/MDMA-GE[1-5]\b/).uniq
+  errors << "#{name}: expected MDMA-GE1..GE5, found #{exercise_ids.length}" unless exercise_ids.length == 5
+  errors << "#{name}: missing Reality Lab" unless text.include?("Reality Lab")
+  errors << "#{name}: missing Python route" unless text.include?("Python")
+end
+
+%w[labs.md en/labs.md].each do |name|
+  text = (ROOT / name).read
+  errors << "#{name}: missing method comparison" unless text.match?(/方法对照|method comparison/i)
+  errors << "#{name}: missing reproducible package" unless text.match?(/可复现分析包|Reproducible analysis package/i)
 end
 
 forbidden = /Summer 2026 MDMA Cases\.pdf|20260603_(?:Problems|Sylllabus)\.md|(?:API_KEY|PASSWORD|SECRET)\s*=\s*\S+/
@@ -88,6 +98,8 @@ if errors.empty?
   puts "site checks: PASS"
   puts "bilingual pages: #{pages.length}"
   puts "MDMA public case IDs per locale: 6"
+  puts "MDMA group exercise IDs per locale: 5"
+  puts "tool-neutral assignment/lab contract: PASS"
   exit 0
 end
 
