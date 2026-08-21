@@ -1,0 +1,38 @@
+title: Management Decision Modeling & Analysis
+title_zh: 企业管理决策建模与分析
+title_en: Management Decision Modeling & Analysis
+tagline_zh: 从真实管理问题到可审计决策
+tagline_en: From real management problems to auditable decisions
+description: MDMA 企业管理决策建模与分析双语课程网站
+url: "https://tjluo-ucas.github.io"
+baseurl: "/mdma"
+repository: tjluo-ucas/mdma
+github_url: https://github.com/tjluo-ucas/mdma
+instructor_url: https://github.com/tiejianluo
+author: Tiejian Luo
+school_zh: 中国科学院大学
+school_en: University of Chinese Academy of Sciences
+department_zh: 计算机科学与技术学院
+department_en: School of Computer Science and Technology
+email: tjluo@ucas.ac.cn
+default_lang: zh-CN
+timezone: Asia/Shanghai
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - DEPLOYMENT.md
+  - RESEARCH.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - .github
+  - .bundle
+  - _site
+  - vendor
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: zh-CN

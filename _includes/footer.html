@@ -1,0 +1,23 @@
+{% assign is_en = false %}{% if page.lang == 'en' %}{% assign is_en = true %}{% endif %}
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="footer-brand" href="{{ '/' | relative_url }}">MDMA <span>·</span> Decision Quality</a>
+      <p>{% if is_en %}Frame the right problem, build a testable model, and make an accountable recommendation.{% else %}界定正确问题，建立可检验模型，形成可负责的建议。{% endif %}</p>
+    </div>
+    <div>
+      <strong>{% if is_en %}Course{% else %}课程{% endif %}</strong>
+      <a href="{{ site.github_url }}">GitHub</a>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+    <div>
+      <strong>{% if is_en %}Institution{% else %}学校{% endif %}</strong>
+      <span>{% if is_en %}{{ site.school_en }}{% else %}{{ site.school_zh }}{% endif %}</span>
+      <span>{% if is_en %}{{ site.department_en }}{% else %}{{ site.department_zh }}{% endif %}</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© {{ 'now' | date: '%Y' }} {{ site.author }}</span>
+    <span>{% if is_en %}Problem-oriented modeling for auditable management decisions.{% else %}面向可审计管理决策的问题导向建模。{% endif %}</span>
+  </div>
+</footer>

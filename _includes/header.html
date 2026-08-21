@@ -1,0 +1,38 @@
+{% assign is_en = false %}
+{% if page.lang == 'en' %}{% assign is_en = true %}{% endif %}
+{% assign home_url = '/' %}
+{% if is_en %}{% assign home_url = '/en/' %}{% endif %}
+<header class="site-header" data-header>
+  <div class="nav-shell">
+    <a class="brand" href="{{ home_url | relative_url }}" aria-label="MDMA home">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span><strong>{% if is_en %}Management Decision Modeling &amp; Analysis{% else %}企业管理决策建模与分析{% endif %}</strong><small>MDMA · Problem-oriented intensive course</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+      <span class="sr-only">{% if is_en %}Open navigation{% else %}打开导航{% endif %}</span>
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="{% if is_en %}Primary navigation{% else %}主导航{% endif %}" data-nav>
+      {% if is_en %}
+        <a {% if page.page_key == 'home' %}class="active" aria-current="page"{% endif %} href="{{ '/en/' | relative_url }}">Overview</a>
+        <a {% if page.page_key == 'syllabus' %}class="active" aria-current="page"{% endif %} href="{{ '/en/syllabus/' | relative_url }}">Syllabus</a>
+        <a {% if page.page_key == 'schedule' %}class="active" aria-current="page"{% endif %} href="{{ '/en/schedule/' | relative_url }}">Schedule</a>
+        <a {% if page.page_key == 'lectures' %}class="active" aria-current="page"{% endif %} href="{{ '/en/lectures/' | relative_url }}">Methods</a>
+        <a {% if page.page_key == 'assignments' %}class="active" aria-current="page"{% endif %} href="{{ '/en/assignments/' | relative_url }}">Cases</a>
+        <a {% if page.page_key == 'labs' %}class="active" aria-current="page"{% endif %} href="{{ '/en/labs/' | relative_url }}">Studio</a>
+        <a {% if page.page_key == 'project' %}class="active" aria-current="page"{% endif %} href="{{ '/en/project/' | relative_url }}">Assessment</a>
+        <a {% if page.page_key == 'resources' %}class="active" aria-current="page"{% endif %} href="{{ '/en/resources/' | relative_url }}">Readings</a>
+      {% else %}
+        <a {% if page.page_key == 'home' %}class="active" aria-current="page"{% endif %} href="{{ '/' | relative_url }}">课程简介</a>
+        <a {% if page.page_key == 'syllabus' %}class="active" aria-current="page"{% endif %} href="{{ '/syllabus/' | relative_url }}">教学大纲</a>
+        <a {% if page.page_key == 'schedule' %}class="active" aria-current="page"{% endif %} href="{{ '/schedule/' | relative_url }}">课程安排</a>
+        <a {% if page.page_key == 'lectures' %}class="active" aria-current="page"{% endif %} href="{{ '/lectures/' | relative_url }}">方法体系</a>
+        <a {% if page.page_key == 'assignments' %}class="active" aria-current="page"{% endif %} href="{{ '/assignments/' | relative_url }}">案例作业</a>
+        <a {% if page.page_key == 'labs' %}class="active" aria-current="page"{% endif %} href="{{ '/labs/' | relative_url }}">建模工坊</a>
+        <a {% if page.page_key == 'project' %}class="active" aria-current="page"{% endif %} href="{{ '/project/' | relative_url }}">考核评价</a>
+        <a {% if page.page_key == 'resources' %}class="active" aria-current="page"{% endif %} href="{{ '/resources/' | relative_url }}">教材文献</a>
+      {% endif %}
+      <a class="language-link" href="{{ page.translation_url | default: '/en/' | relative_url }}" hreflang="{% if is_en %}zh-CN{% else %}en{% endif %}">{% if is_en %}中文{% else %}EN{% endif %}</a>
+    </nav>
+  </div>
+</header>
